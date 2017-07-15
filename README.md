@@ -8,7 +8,13 @@ git clone git@github.com:rkiel/beautification.git
 cd beautification
 ```
 
-Choose between `eslint` and `jshint`.
+#### pre-commit
+
+Install npm package.
+
+```unix
+yarn add --dev pre-commmit
+```
 
 #### jsbeautify
 
@@ -52,6 +58,22 @@ echo .eslintrc >> .gitignore
 echo .eslintignore >> .gitignore
 ```
 
+Add script to `package.json`
+
+```JSON
+"scripts": {
+  "eslint": "eslint src"
+}
+```
+
+Add pre-commit to `package.json`
+```JSON
+  "precommit.silent": true,
+  "pre-commit": [
+    "eslint"
+  ]
+```
+
 #### jshint
 
 Install Atom package.
@@ -78,4 +100,21 @@ In your project, link to shared dot files from Git.
 ```unix
 echo .jshintrc >> .gitignore
 echo .jshintignore >> .gitignore
+```
+
+Add script to `package.json`
+
+```JSON
+"scripts": {
+  "jshint": "jshint src"
+}
+```
+
+Add pre-commit to `package.json`
+
+```JSON
+  "precommit.silent": true,
+  "pre-commit": [
+    "jshint"
+  ]
 ```
