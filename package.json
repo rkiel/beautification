@@ -1,0 +1,11 @@
+{
+  "name": "beautification",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:rkiel/beautification.git",
+  "author": "rkiel <cygnus@pobox.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jshint": "^2.9.5"
+  }
+}

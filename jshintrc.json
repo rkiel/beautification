@@ -1,0 +1,9 @@
+{
+  "curly": true,
+  "esversion": 6,
+  "undef": true,
+  "unused": true,
+  "globals": {
+    "MY_GLOBAL": true
+  }
+}
