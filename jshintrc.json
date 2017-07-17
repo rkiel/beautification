@@ -1,9 +1,33 @@
 {
-  "curly": true,
+  "browser": true,
+  "jasmine": true,
   "esversion": 6,
-  "undef": true,
-  "unused": true,
   "globals": {
-    "MY_GLOBAL": true
-  }
+    "$compile": true,
+    "$controller": true,
+    "$filter": true,
+    "$httpBackend": true,
+    "$location": true,
+    "$q": true,
+    "$rootScope": true,
+    "$state": true,
+    "$window": true,
+    "angular": true,
+    "bard": true,
+    "expectToHaveBeenCalledWith": true,
+    "hasFieldGrp": true,
+    "itAsync": true,
+    "module": true,
+    "sinon": true
+  },
+
+  "boss": true,
+  "eqeqeq": true,
+  "eqnull": true,
+  "expr": true,
+  "latedef": "nofunc",
+  "noarg": true,
+  "nonew": true,
+  "undef": true,
+  "unused": true
 }
