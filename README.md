@@ -48,6 +48,8 @@ yarn add --dev eslint
 In your project, link to shared dot files.
 
 ```unix
+ln -nfs ~/GitHub/rkiel/beautification/eslintrc.json .eslintrc.json
+
 ln -nfs ~/GitHub/rkiel/beautification/eslintrc.json .eslintrc
 ln -nfs ~/GitHub/rkiel/beautification/eslintignore.json .eslintignore
 ```
