@@ -78,6 +78,7 @@ Add pre-commit to `package.json`
 Install Atom package.
 
 ```unix
+apm install jshint
 apm install linter-jshint
 ```
 
