@@ -1,0 +1,5 @@
+assets/**
+bower_components/**
+build/**
+lib/**
+node_modules/**
