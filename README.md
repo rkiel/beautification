@@ -60,10 +60,8 @@ echo .eslintignore >> .gitignore
 
 Add script to `package.json`
 
-```JSON
-"scripts": {
-  "eslint": "eslint src"
-}
+```unix
+scripts add eslint as eslint src
 ```
 
 Add pre-commit to `package.json`
@@ -104,10 +102,8 @@ echo .jshintignore >> .gitignore
 
 Add script to `package.json`
 
-```JSON
-"scripts": {
-  "jshint": "jshint src"
-}
+```unix
+scripts add jshint as jshint src
 ```
 
 Add pre-commit to `package.json`
