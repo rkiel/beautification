@@ -22,6 +22,7 @@ In your project, link to shared dot files.
 
 ```unix
 ln -nfs ~/GitHub/rkiel/beautification/jsbeautifyrc.json .jsbeautifyrc
+ln -nfs ~/GitHub/rkiel/beautification/jsbeautifyrc.yaml .jsbeautifyrc
 ```
 
 In your project, hide shared dot files from Git.
