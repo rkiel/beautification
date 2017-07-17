@@ -36,7 +36,7 @@ echo .jsbeautifyrc >> .gitignore
 Install Atom package.
 
 ```unix
-apm install linter-eslint
+# apm install linter-eslint
 ```
 
 Install npm package.
@@ -79,7 +79,7 @@ Install Atom package.
 
 ```unix
 apm install jshint
-apm install linter-jshint
+# apm install linter-jshint
 ```
 
 Install npm package.
