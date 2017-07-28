@@ -6,6 +6,11 @@
   "author": "rkiel <cygnus@pobox.com>",
   "license": "MIT",
   "devDependencies": {
-    "jshint": "^2.9.5"
+    "jshint": "^2.9.5",
+    "prettier": "^1.5.3"
+  },
+  "scripts": {
+    "bob": "foobar",
+    "p": "prettier --write"
   }
 }
