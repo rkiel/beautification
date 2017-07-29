@@ -10,29 +10,6 @@ git clone git@github.com:rkiel/beautification.git
 cd beautification
 ```
 
-## Atom Setup
-
-#### Install atom packages
-
-```unix
-apm install linter
-apm install linter-ui-default
-apm install linter-eslint
-apm install prettier-atom
-```
-
-#### Update `~/.atom/config.cson`
-
-```json
-"prettier-atom":
-  formatOnSaveOptions:
-    enabled: true
-    isDisabledIfNotInPackageJson: true
-  prettierOptions:
-    singleQuote: true
-```
-
-
 ## Project Setup
 
 `cd` into your project directory.
@@ -64,4 +41,26 @@ Use `sc` from  [rkiel/node-utilities](https://github.com/rkiel/node-utilities) o
 ```unix
 sc add e as eslint .
 sc add p as prettier --single-quote --write '"!(build|node_modules)/**/*.js"' '"*.js"'
+```
+
+## Atom Setup
+
+#### Install atom packages
+
+```unix
+apm install linter
+apm install linter-ui-default
+apm install linter-eslint
+apm install prettier-atom
+```
+
+#### Update `~/.atom/config.cson`
+
+```json
+"prettier-atom":
+  formatOnSaveOptions:
+    enabled: true
+    isDisabledIfNotInPackageJson: true
+  prettierOptions:
+    singleQuote: true
 ```
