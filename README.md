@@ -63,5 +63,5 @@ echo .eslintignore >> .gitignore
 Use `sc` from  [rkiel/node-utilities](https://github.com/rkiel/node-utilities) or manually add to `scripts` section of `package.json`.
 ```unix
 sc add e as eslint .
-sc add p as prettier --single-quote --write '"**/*.js\"'
+sc add p as prettier --single-quote --write 'build/!(*)' '"**/*.js\"'
 ```

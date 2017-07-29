@@ -10,7 +10,7 @@
     "prettier": "^1.5.3"
   },
   "scripts": {
-    "p": "prettier --single-quote --write \"**/*.js\"",
+    "p": "prettier --single-quote --write \"build/!(*)\" \"src/**/*.js\""
     "e": "eslint ."
   }
 }
