@@ -10,7 +10,6 @@
     "prettier": "^1.5.3"
   },
   "scripts": {
-    "bob": "foobar",
-    "p": "prettier --write"
+    "p": "prettier --single-quote --write \"**/*.js\""
   }
 }

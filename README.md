@@ -1,6 +1,8 @@
 # beautification
 
-Install the repo
+A generic project setup for JavaScrpt beautification.
+
+## Installation
 
 ```unix
 mkdir -p ~/GitHub/rkiel && cd $_
@@ -8,113 +10,57 @@ git clone git@github.com:rkiel/beautification.git
 cd beautification
 ```
 
-#### pre-commit
+## Atom Setup
 
-Install npm package.
-
-```unix
-yarn add --dev pre-commmit
-```
-
-#### jsbeautify
-
-In your project, link to shared dot files.
+#### Install atom packages
 
 ```unix
-ln -nfs ~/GitHub/rkiel/beautification/jsbeautifyrc.json .jsbeautifyrc
-ln -nfs ~/GitHub/rkiel/beautification/jsbeautifyrc.yaml .jsbeautifyrc
+apm install linter
+apm install linter-ui-default
+apm install linter-eslint
+apm install prettier-atom
 ```
 
-In your project, hide shared dot files from Git.
+#### Update `~/.atom/config.cson`
 
-```unix
-echo .jsbeautifyrc >> .gitignore
+```json
+"prettier-atom":
+  formatOnSaveOptions:
+    enabled: true
+    isDisabledIfNotInPackageJson: true
+  prettierOptions:
+    singleQuote: true
 ```
 
-#### eslint
 
-Install Atom package.
+## Project Setup
 
-```unix
-# apm install linter-eslint
-```
+`cd` into your project directory.
 
-Install npm package.
+#### Install npm packages
 
 ```unix
 yarn add --dev eslint
+yarn add --dev prettier
 ```
 
-In your project, link to shared dot files.
+#### Link shared dot files
 
 ```unix
-ln -nfs ~/GitHub/rkiel/beautification/eslintrc.json .eslintrc.json
-
 ln -nfs ~/GitHub/rkiel/beautification/eslintrc.json .eslintrc
 ln -nfs ~/GitHub/rkiel/beautification/eslintignore.json .eslintignore
 ```
 
-In your project, link to shared dot files from Git.
+#### Git ignore shared dot files
 
 ```unix
 echo .eslintrc >> .gitignore
 echo .eslintignore >> .gitignore
 ```
 
-Add script to `package.json`
+#### Add scripts to `package.json`
 
+Use `sc` from  [rkiel/node-utilities](https://github.com/rkiel/node-utilities) or manually add to `scripts` section of `package.json`.
 ```unix
-scripts add eslint as eslint src
-```
-
-Add pre-commit to `package.json`
-```JSON
-  "precommit.silent": true,
-  "pre-commit": [
-    "eslint"
-  ]
-```
-
-#### jshint
-
-Install Atom package.
-
-```unix
-apm install jshint
-# apm install linter-jshint
-```
-
-Install npm package.
-
-```unix
-yarn add --dev jshint
-```
-
-In your project, link to shared dot files.
-
-```unix
-ln -nfs ~/GitHub/rkiel/beautification/jshintrc.json .jshintrc
-ln -nfs ~/GitHub/rkiel/beautification/jshintignore.json .jshintignore
-```
-
-In your project, link to shared dot files from Git.
-
-```unix
-echo .jshintrc >> .gitignore
-echo .jshintignore >> .gitignore
-```
-
-Add script to `package.json`
-
-```unix
-scripts add jshint as jshint src
-```
-
-Add pre-commit to `package.json`
-
-```JSON
-  "precommit.silent": true,
-  "pre-commit": [
-    "jshint"
-  ]
+sc add eslint as eslint .
 ```
