@@ -62,5 +62,6 @@ apm install prettier-atom
     enabled: true
     isDisabledIfNotInPackageJson: true
   prettierOptions:
+    jsxBracketSameLine: true
     singleQuote: true
 ```
