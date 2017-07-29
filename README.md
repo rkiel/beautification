@@ -1,6 +1,6 @@
 # beautification
 
-A generic project setup for JavaScrpt beautification.
+A generic project setup for JavaScript beautification.
 
 ## Installation
 
