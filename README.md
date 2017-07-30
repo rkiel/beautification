@@ -40,6 +40,7 @@ echo .eslintignore >> .gitignore
 
 Use `sc` from  [rkiel/node-utilities](https://github.com/rkiel/node-utilities) or manually add to `scripts` section of `package.json`.
 ```unix
+sc init
 sc add e as eslint .
 sc add pre-commit-eslint as eslint .
 sc add p as prettier --single-quote --jsx-bracket-same-line --write '"!(build|node_modules)/**/*.js"' '"*.js"'
