@@ -43,8 +43,9 @@ Use `sc` from  [rkiel/node-utilities](https://github.com/rkiel/node-utilities) o
 sc init
 sc add e as eslint .
 sc add pre-commit-eslint as eslint .
-sc add p as prettier --single-quote --jsx-bracket-same-line --write '"!(build|node_modules)/**/*.js"' '"*.js"'
-sc add pre-commit-prettier as prettier --single-quote --jsx-bracket-same-line --list-different '"!(build|node_modules)/**/*.js"' '"*.js"'
+sc add p as prettier --single-quote --jsx-bracket-same-line --write '"!(build|node_modules)/**/*.js"' '"*.js"' '"!(build|node_modules)/**/*.json"' '"*.json"'
+sc add pre-commit-prettier as prettier --single-quote --jsx-bracket-same-line --list-different '"!(build|node_modules)/**/*.js"' '"*.js"' '"!(build|node_modules)/**/*.json"' '"*.json"'
+
 ```
 
 #### Add pre-commit to `package.json`
