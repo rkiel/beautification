@@ -19,6 +19,7 @@ cd beautification
 ```unix
 yarn add --dev eslint
 yarn add --dev prettier
+yarn add --dev pre-commit
 ```
 
 #### Link shared dot files
@@ -40,7 +41,18 @@ echo .eslintignore >> .gitignore
 Use `sc` from  [rkiel/node-utilities](https://github.com/rkiel/node-utilities) or manually add to `scripts` section of `package.json`.
 ```unix
 sc add e as eslint .
+sc add pre-commit-eslint as eslint .
 sc add p as prettier --single-quote --jsx-bracket-same-line --write '"!(build|node_modules)/**/*.js"' '"*.js"'
+sc add pre-commit-prettier as prettier --single-quote --jsx-bracket-same-line --list-different '"!(build|node_modules)/**/*.js"' '"*.js"'
+```
+
+#### Add pre-commit to `package.json`
+
+```json
+"pre-commit": [
+  "pre-commit-prettier",
+  "pre-commit-eslint"
+]
 ```
 
 ## Atom Setup
