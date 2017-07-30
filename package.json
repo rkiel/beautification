@@ -6,8 +6,6 @@
   "author": "rkiel <cygnus@pobox.com>",
   "license": "MIT",
   "devDependencies": {
-    "jshint": "^2.9.5",
-    "pre-commit": "^1.2.2",
     "prettier": "^1.5.3"
   },
   "scripts": {
