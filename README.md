@@ -77,5 +77,6 @@ apm install prettier-atom
     isDisabledIfNotInPackageJson: true
   prettierOptions:
     jsxBracketSameLine: true
+    printWidth: 120
     singleQuote: true
 ```
