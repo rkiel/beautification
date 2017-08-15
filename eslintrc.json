@@ -9,7 +9,8 @@
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:jest/recommended"
+    "plugin:jest/recommended",
+    "react-app"
   ],
   "parserOptions": {
     "ecmaFeatures": {
