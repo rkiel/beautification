@@ -19,6 +19,7 @@ cd beautification
 ```unix
 yarn add --dev eslint
 yarn add --dev eslint-plugin-react
+yarn add --dev eslint-plugin-jest
 yarn add --dev prettier
 yarn add --dev pre-commit
 ```
